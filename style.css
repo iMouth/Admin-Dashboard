@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Orbitron&display=swap");
+.wrapper {
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+  font-family: "Architects Daughter", cursive;
+}
+
+/* Dash board */
+.dashboard {
+  grid-row: 1 / -1;
+  grid-column: 1 / 2;
+  background-color: #e34234;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-left: 20px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin: 20px 20px 20px 0px;
+}
+
+.title > img {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.title > h1 {
+  font-size: 2rem;
+}
+
+.dashitems {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashitems > div {
+  display: flex;
+  align-items: center;
+}
+
+.dashitems > div > img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.dashitems > div > h2 {
+  font-size: 1.3rem;
+}
+
+.dashitems div:nth-child(7) {
+  margin-top: 50px;
+}
+
+/* Interface */
+.interface {
+  grid-column: 2 / -1;
+  grid-row: 1 / 1;
+  background-color: black;
+  display: none;
+}
+
+.content {
+  display: none;
+}
